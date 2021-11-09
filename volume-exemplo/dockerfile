@@ -1,0 +1,8 @@
+FROM node
+MAINTAINER Antonio Junior
+COPY . /var/www
+#ENV CRIA VARIAVEIS EX: PATH=Teste
+WORKDIR /var/www
+RUN npm install
+ENTRYPOINT npm start
+EXPOSE 3000
